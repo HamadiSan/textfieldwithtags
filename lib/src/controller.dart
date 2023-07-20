@@ -114,7 +114,19 @@ class TextfieldTagsController extends TextfieldTagsNotifier {
 
   void _onTagOperation(String tag) {
     if (tag.isNotEmpty) {
-      // textEditingController!.clear();  // this line is commented out
+      final cursorPosition = textEditingController!.selection.baseOffset;
+      final textValue = textEditingController!.text;
+      final preText = textValue.substring(0, cursorPosition);
+      final postText = textValue.substring(cursorPosition);
+      final modifiedText = preText + tag + postText;
+
+      textEditingController!.value = TextEditingValue(
+        text: modifiedText,
+        selection: TextSelection.fromPosition(
+          TextPosition(offset: preText.length + tag.length),
+        ),
+      );
+
       _error = _validator != null ? _validator!(tag) : null;
       if (!hasError) {
         super.addTag = tag;
