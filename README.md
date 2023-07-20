@@ -1,4 +1,4 @@
-# textfield_tags
+# textfieldwithtags
 
 This widget allows you to create a textfield that takes in Textfield values and display the values as tags. The tags can also be customized to your own preference. The widget also takes in a controller that can also be customized by extending it into your own custom controller and inheriting its functionalities.  
 
@@ -12,19 +12,19 @@ This widget allows you to create a textfield that takes in Textfield values and 
 
 ```yaml 
   dependencies:
-      textfield_tags: ^2.0.2
+      textfieldwithtags: ^1.0.0
 ```
 
 `$ flutter pub get`
 
 ## Getting Started
 
-To start using this widget, you will need to first import the package inside your project following the installation guide found on [Flutter.dev](https://pub.dev/packages/textfield_tags).
+To start using this widget, you will need to first import the package inside your project following the installation guide found on [Flutter.dev](https://pub.dev/packages/textfieldwithtags).
 
 ## Usage
 
 To use this widget, 
-1. `import 'package:textfield_tags/textfield_tags.dart';` inside your dart file
+1. `import 'package:textfieldwithtags/textfieldwithtags.dart';` inside your dart file
 2. Call the widget `TextFieldTags()`. 
 3. The widget takes in 8 arguments: `List<String>? initialTags`, `FocusNode? focusNode`, `TextEditingController? textEditingController`, `List<String>? textSeperators`, `LetterCase? letterCase`, `Validator? validator`, `InputFieldBuilder inputfieldBuilder`, `TextfieldTagsController? textfieldController`. Read the api documentation about these properties for more details.
 
@@ -203,13 +203,13 @@ The new changes offer more customization and flexibility to developers with many
 
 Sample examples will be shown bellow from left to right respectively.
 
-[Example 1](https://github.com/eyoeldefare/textfield_tags/blob/master/example/lib/main1.dart)
+[Example 1](https://github.com/eyoeldefare/textfieldwithtags/blob/master/example/lib/main1.dart)
 
-[Example 2](https://github.com/eyoeldefare/textfield_tags/blob/master/example/lib/main.dart)
+[Example 2](https://github.com/eyoeldefare/textfieldwithtags/blob/master/example/lib/main.dart)
 
 ### Visual Samples For Above Examples
 
-<img src="https://raw.githubusercontent.com/eyoeldefare/textfield_tags/master/images/gif_1.gif" width=250> <img src="https://raw.githubusercontent.com/eyoeldefare/textfield_tags/master/images/gif_2.gif" width=250>
+<img src="https://raw.githubusercontent.com/eyoeldefare/textfieldwithtags/master/images/gif_1.gif" width=250> <img src="https://raw.githubusercontent.com/eyoeldefare/textfieldwithtags/master/images/gif_2.gif" width=250>
 
 ## More Advanced Functionality Via Custom Controller
 

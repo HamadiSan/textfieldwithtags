@@ -114,7 +114,7 @@ class TextfieldTagsController extends TextfieldTagsNotifier {
 
   void _onTagOperation(String tag) {
     if (tag.isNotEmpty) {
-      textEditingController!.clear();
+      // textEditingController!.clear();  // this line is commented out
       _error = _validator != null ? _validator!(tag) : null;
       if (!hasError) {
         super.addTag = tag;
